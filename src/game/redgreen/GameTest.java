@@ -32,4 +32,13 @@ public class GameTest {
         Assertions.assertTrue(actual, "Метод должен возвращать true если скорость отрицательная");
     }
 
+    @Test
+    public void shouldCheckIfHighSpeed(){
+        int speed = 10000;
+
+        boolean actual = Game.isLoser(speed);
+
+        Assertions.assertTrue(actual, "Метод должен работать с большой скоростью");
+    }
+
 }
