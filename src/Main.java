@@ -33,7 +33,7 @@ public class Main {
 
         System.out.println("Среди " + speeds.length + " игроков: \n" +
                 "Выбыло " + loserCount + " игроков, осталось " + (speeds.length - loserCount) + " игроков \n" +
-                "Скорости выбывших: " + Arrays.toString(speedLosers) +"\n" +
+                "Скорости выбывших: " + Arrays.toString(speedLosers) + "\n" +
                 "Скорости оставшихся: " + Arrays.toString(speedWinners)
         );
     }

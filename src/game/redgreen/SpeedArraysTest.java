@@ -11,7 +11,7 @@ public class SpeedArraysTest {
 
         int actual = SpeedArrays.countLoser(speeds);
         int expected = 6;
-        Assertions.assertEquals(expected, actual,"Метод должен возвращать количество выбывших");
+        Assertions.assertEquals(expected, actual, "Метод должен возвращать количество выбывших");
     }
 
     @Test
@@ -100,7 +100,7 @@ public class SpeedArraysTest {
         int[] speeds = {5, 0, 0, 0, 0, 0, 0, 0, 0};
 
         int[] actual = SpeedArrays.speedLosers(speeds);
-        int [] expected = {5};
+        int[] expected = {5};
         Assertions.assertArrayEquals(expected, actual, "Метод должен возвращать скорости выбывших, если выбывший первый");
     }
 
@@ -119,7 +119,7 @@ public class SpeedArraysTest {
 
         int[] actual = SpeedArrays.speedLosers(speeds);
         int[] expected = {1};
-        Assertions.assertArrayEquals(expected, actual,"Метод должен возвращать массив из одной скорости, " +
+        Assertions.assertArrayEquals(expected, actual, "Метод должен возвращать массив из одной скорости, " +
                 "если игрок единственный и он выбыл");
     }
 
@@ -128,7 +128,7 @@ public class SpeedArraysTest {
         int[] speeds = {0};
 
         int[] actual = SpeedArrays.speedLosers(speeds);
-        int [] expected = {};
+        int[] expected = {};
         Assertions.assertArrayEquals(expected, actual, "Метод должен возвращать пустой массив, " +
                 "если игрок единственный и он не выбыл");
     }
@@ -165,7 +165,7 @@ public class SpeedArraysTest {
         int[] speeds = {0, 5, 6, 1, 10, 2, 15, 2, 5};
 
         int[] actual = SpeedArrays.speedWinners(speeds);
-        int [] expected = {0};
+        int[] expected = {0};
         Assertions.assertArrayEquals(expected, actual, "Метод должен возвращать скорости выигравших, " +
                 "если выигравший первый");
     }
@@ -186,7 +186,7 @@ public class SpeedArraysTest {
 
         int[] actual = SpeedArrays.speedWinners(speeds);
         int[] expected = {0};
-        Assertions.assertArrayEquals(expected, actual,"Метод должен возвращать массив из одной скорости, " +
+        Assertions.assertArrayEquals(expected, actual, "Метод должен возвращать массив из одной скорости, " +
                 "если игрок единственный и он выиграл");
     }
 
@@ -195,7 +195,7 @@ public class SpeedArraysTest {
         int[] speeds = {5};
 
         int[] actual = SpeedArrays.speedWinners(speeds);
-        int [] expected = {};
+        int[] expected = {};
         Assertions.assertArrayEquals(expected, actual, "Метод должен возвращать пустой массив, " +
                 "если игрок единственный и он выбыл");
     }
